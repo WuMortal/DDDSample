@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wigor.Sample.DomainService"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wigor.Sample.Infrastructure.CrossCutting", "Wigor.Sample.Infrastructure.CrossCutting\Wigor.Sample.Infrastructure.CrossCutting.csproj", "{68DCE9C4-4529-4777-ADCF-98348BD7D4F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wigor.Sample.ApplicationContract", "Wigor.Sample.ApplicationContract\Wigor.Sample.ApplicationContract.csproj", "{60C0B921-6B5F-443A-91D2-0261A12B5BFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{68DCE9C4-4529-4777-ADCF-98348BD7D4F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68DCE9C4-4529-4777-ADCF-98348BD7D4F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68DCE9C4-4529-4777-ADCF-98348BD7D4F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60C0B921-6B5F-443A-91D2-0261A12B5BFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C0B921-6B5F-443A-91D2-0261A12B5BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C0B921-6B5F-443A-91D2-0261A12B5BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C0B921-6B5F-443A-91D2-0261A12B5BFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +69,7 @@ Global
 		{4CFE7614-843D-46BA-A377-6FD10220BC42} = {03876CE6-C4E3-4EFB-B542-0A218C1DC797}
 		{E26BDD8F-DE61-40BC-9A6F-00DFC2AB7F0C} = {6D3CB7F1-90B8-4D58-A4EE-B39CD6F98D07}
 		{68DCE9C4-4529-4777-ADCF-98348BD7D4F6} = {AB3257F4-C011-4909-8C10-9D4B998C166B}
+		{60C0B921-6B5F-443A-91D2-0261A12B5BFE} = {1B155BC4-4F83-4487-B03E-FD61F09C3D24}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CEF04E43-3F9D-4460-B0C2-7681CF3AC7F1}
