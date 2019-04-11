@@ -11,9 +11,30 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Domain", "3-Domain", "{6D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Infrastructure", "4-Infrastructure", "{AF68E6E5-8D92-45E6-9ED5-97D0A794C4D2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1-Repository", "4.1-Repository", "{03876CE6-C4E3-4EFB-B542-0A218C1DC797}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2-CrossCutting", "4.2-CrossCutting", "{AB3257F4-C011-4909-8C10-9D4B998C166B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wigor.Sample.Domain", "Wigor.Sample.Domain\Wigor.Sample.Domain.csproj", "{7FAA4983-FFD9-4B64-91EA-57F8E825F448}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FAA4983-FFD9-4B64-91EA-57F8E825F448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FAA4983-FFD9-4B64-91EA-57F8E825F448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FAA4983-FFD9-4B64-91EA-57F8E825F448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FAA4983-FFD9-4B64-91EA-57F8E825F448}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{03876CE6-C4E3-4EFB-B542-0A218C1DC797} = {AF68E6E5-8D92-45E6-9ED5-97D0A794C4D2}
+		{AB3257F4-C011-4909-8C10-9D4B998C166B} = {AF68E6E5-8D92-45E6-9ED5-97D0A794C4D2}
+		{7FAA4983-FFD9-4B64-91EA-57F8E825F448} = {6D3CB7F1-90B8-4D58-A4EE-B39CD6F98D07}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CEF04E43-3F9D-4460-B0C2-7681CF3AC7F1}
