@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Map\" />
+    <Folder Include="Service\" />
+  </ItemGroup>
+
 </Project>
