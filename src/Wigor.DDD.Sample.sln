@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wigor.Sample.ApplicationCon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wigor.Sample.Application", "Wigor.Sample.Application\Wigor.Sample.Application.csproj", "{AFAF5932-CD21-4D64-A14F-AC31329D52D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wigor.Sample.WebAPI", "Wigor.Sample.WebAPI\Wigor.Sample.WebAPI.csproj", "{55E1D5C3-CD15-4222-B7E4-48B30FD76412}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{AFAF5932-CD21-4D64-A14F-AC31329D52D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFAF5932-CD21-4D64-A14F-AC31329D52D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFAF5932-CD21-4D64-A14F-AC31329D52D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55E1D5C3-CD15-4222-B7E4-48B30FD76412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55E1D5C3-CD15-4222-B7E4-48B30FD76412}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55E1D5C3-CD15-4222-B7E4-48B30FD76412}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55E1D5C3-CD15-4222-B7E4-48B30FD76412}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,6 +83,7 @@ Global
 		{68DCE9C4-4529-4777-ADCF-98348BD7D4F6} = {AB3257F4-C011-4909-8C10-9D4B998C166B}
 		{60C0B921-6B5F-443A-91D2-0261A12B5BFE} = {1B155BC4-4F83-4487-B03E-FD61F09C3D24}
 		{AFAF5932-CD21-4D64-A14F-AC31329D52D1} = {1B155BC4-4F83-4487-B03E-FD61F09C3D24}
+		{55E1D5C3-CD15-4222-B7E4-48B30FD76412} = {A87813C0-030C-459C-A0DF-5457417EB0B7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CEF04E43-3F9D-4460-B0C2-7681CF3AC7F1}
