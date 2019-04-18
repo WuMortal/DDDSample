@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Wigor.Sample.Domain\Wigor.Sample.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -6,7 +6,10 @@
 
   <ItemGroup>
     <Folder Include="Entity\RemoteEntity\" />
-    <Folder Include="IRepository\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FreeSql.Repository" Version="0.5.1.3" />
   </ItemGroup>
 
 </Project>
