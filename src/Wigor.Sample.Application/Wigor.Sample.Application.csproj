@@ -6,7 +6,10 @@
 
   <ItemGroup>
     <Folder Include="Map\" />
-    <Folder Include="Service\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Wigor.Sample.ApplicationContract\Wigor.Sample.ApplicationContract.csproj" />
   </ItemGroup>
 
 </Project>
