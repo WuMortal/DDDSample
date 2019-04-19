@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Wigor.Sample.Infrastructure.Repository;
 
 namespace Wigor.Sample.WebAPI
 {
@@ -24,6 +25,13 @@ namespace Wigor.Sample.WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var fsql = new FreeSql.FreeSqlBuilder()
+                .UseConnectionString(FreeSql.DataType.Sqlite, @"Data Source=|DataDirectory|\document.db;Pooling=true;Max Pool Size=10")
+                .UseAutoSyncStructure(true) //自动迁移实体的结构到数据库
+                .Build();
+            services.AddSingleton(fsql);
+            services.AddRepository(typeof(UserRepository));
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
