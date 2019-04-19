@@ -13,5 +13,7 @@ namespace Wigor.Sample.Domain.Entity
         public string Name { get; set; }
 
         public int Age { get; set; }
+
+        public DateTime RegisterDateTime { get; set; }
     }
 }
