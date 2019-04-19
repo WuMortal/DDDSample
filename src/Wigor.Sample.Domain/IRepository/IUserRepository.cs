@@ -1,9 +1,10 @@
-﻿using FreeSql;
+﻿using System;
+using FreeSql;
 using Wigor.Sample.Domain.Entity;
 
 namespace Wigor.Sample.Domain.IRepository
 {
-    public interface IUserRepository : IBasicRepository<UserEntity>
+    public interface IUserRepository : IBasicRepository<UserEntity, Guid>
     {
     }
 }

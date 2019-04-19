@@ -11,7 +11,7 @@ namespace Wigor.Sample.Infrastructure.Repository
     {
         public UserRepository(IFreeSql freeSql)
             : base(freeSql)
-        {           
+        {
         }
 
     }
