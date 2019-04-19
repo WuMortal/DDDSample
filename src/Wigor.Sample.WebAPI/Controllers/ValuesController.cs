@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Wigor.Sample.ApplicationContract;
+using Wigor.Sample.ApplicationContract.DTO;
 using Wigor.Sample.Domain.IRepository;
 
 namespace Wigor.Sample.WebAPI.Controllers
@@ -21,9 +22,9 @@ namespace Wigor.Sample.WebAPI.Controllers
 
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public async Task<List<UserDTO>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return await Task.Run(() => _userService.GetList());
         }
 
         // GET api/values/5

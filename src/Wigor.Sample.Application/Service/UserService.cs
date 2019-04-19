@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using Wigor.Sample.Application.Map;
 using Wigor.Sample.ApplicationContract;
+using Wigor.Sample.ApplicationContract.DTO;
 using Wigor.Sample.Domain.Entity;
 using Wigor.Sample.Domain.IRepository;
 
@@ -35,6 +37,12 @@ namespace Wigor.Sample.Application.Service
             };
 
             return await _userRepository.InsertAsync(userEntity) != null;
+        }
+
+        public List<UserDTO> GetList()
+        {
+            return _userRepository.Select
+                .ToList().ToDTOList();
         }
 
         #endregion

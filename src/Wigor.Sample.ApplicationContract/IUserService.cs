@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using Wigor.Sample.ApplicationContract.DTO;
 
 namespace Wigor.Sample.ApplicationContract
 {
@@ -14,5 +15,7 @@ namespace Wigor.Sample.ApplicationContract
         /// <param name="age">年龄</param>
         /// <returns></returns>
         Task<bool> Register(string userName, int age);
+
+        List<UserDTO> GetList();
     }
 }
