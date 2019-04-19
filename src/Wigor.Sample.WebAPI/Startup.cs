@@ -9,6 +9,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Wigor.Sample.Application;
+using Wigor.Sample.Application.Service;
 using Wigor.Sample.Infrastructure.Repository;
 
 namespace Wigor.Sample.WebAPI
@@ -31,6 +33,7 @@ namespace Wigor.Sample.WebAPI
                 .Build();
             services.AddSingleton(fsql);
             services.AddRepository(typeof(UserRepository));
+            services.AddService(typeof(UserService));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

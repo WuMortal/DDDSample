@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Wigor.Sample.ApplicationContract;
 using Wigor.Sample.Domain.IRepository;
 
 namespace Wigor.Sample.WebAPI.Controllers
@@ -11,6 +12,13 @@ namespace Wigor.Sample.WebAPI.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        readonly IUserService _userService;
+
+        public ValuesController(IUserService userService)
+        {
+            _userService = userService;
+        }
+
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
@@ -27,8 +35,11 @@ namespace Wigor.Sample.WebAPI.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<IActionResult> Post()
         {
+            bool isSuccess = await _userService.Register("Wigor", 22);
+
+            return Ok();
         }
 
         // PUT api/values/5
