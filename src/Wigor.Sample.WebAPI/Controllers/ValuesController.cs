@@ -38,9 +38,10 @@ namespace Wigor.Sample.WebAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> Post()
         {
-            bool isSuccess = await _userService.Register("Wigor", 22);
+            var second = DateTime.Now.Second.ToString("00");
+            bool isSuccess = await _userService.Register("Wigor", $"188888888{second}", 22);
 
-            return Ok();
+            return Ok(isSuccess);
         }
 
         // PUT api/values/5

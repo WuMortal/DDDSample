@@ -25,18 +25,27 @@ namespace Wigor.Sample.Application.Service
         /// 用户注册
         /// </summary>
         /// <param name="userName">用户名</param>
+        /// <param name="mobile">手机</param>
         /// <param name="age">年龄</param>
         /// <returns></returns>
-        public async Task<bool> Register(string userName, int age)
+        public async Task<bool> Register(string userName, string mobile, int age)
         {
-            var userEntity = new UserEntity
+            var userEnity = await _userRepository.GetByMobileAsync(mobile);
+
+            if (userEnity != null)
+            {
+                return false;
+            }
+
+            var addUserEntity = new UserEntity
             {
                 Id = Guid.NewGuid(),
                 Age = age,
-                Name = userName
+                Name = userName,
+                Mobile = mobile
             };
 
-            return await _userRepository.InsertAsync(userEntity) != null;
+            return await _userRepository.InsertAsync(addUserEntity) != null;
         }
 
         public List<UserDTO> GetList()

@@ -10,6 +10,10 @@ namespace Wigor.Sample.ApplicationContract.DTO
 
         public string Name { get; set; }
 
+        public string Mobile { get; set; }
+
         public int Age { get; set; }
+
+        public string ProfilePhotoSrc { get; set; }
     }
 }

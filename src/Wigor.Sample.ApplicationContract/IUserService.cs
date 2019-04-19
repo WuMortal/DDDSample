@@ -12,9 +12,10 @@ namespace Wigor.Sample.ApplicationContract
         /// 用户注册
         /// </summary>
         /// <param name="userName">用户名</param>
+        /// <param name="mobile">手机号</param>
         /// <param name="age">年龄</param>
         /// <returns></returns>
-        Task<bool> Register(string userName, int age);
+        Task<bool> Register(string userName, string mobile, int age);
 
         List<UserDTO> GetList();
     }
