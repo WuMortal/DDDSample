@@ -46,6 +46,11 @@ namespace Wigor.Sample.WebAPI
                 app.UseDeveloperExceptionPage();
             }
 
+            AutoMapper.Mapper.Initialize(cfg =>
+            {
+                cfg.AddProfile<Application.Map.AutoMapProfile>();
+            });
+
             app.UseMvc();
         }
     }
