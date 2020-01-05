@@ -44,7 +44,7 @@
 
 ## 分层架构图
 
-![DDD 流程图](/doc/images/DDD_1.png)
+![DDD 流程图](https://raw.githubusercontent.com/WuMortal/DDDSamp/master/doc/images/DDD_1.png)
 
 下面是关于 DDD 分层的一些描述，摘抄至之前看过的一片文章。
 > * Presentation 为表示层，负责向用户显示信息和解释用户命令。这里指的用户可以是另一个计算机系统，不一定是使用用户界面的人。
